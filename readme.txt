@@ -1,4 +1,5 @@
 Theme designed by Malixx
+Theme coded by EctoOne
 Version 1.0
 13/08/2018
 
