@@ -28,3 +28,6 @@ On-Screen Help: OFF
 Currently this theme supports:
 
 Game Boy
+Game Boy Color
+Game Boy Advance
+Game Gear
