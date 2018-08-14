@@ -29,13 +29,16 @@
 	<!-- Font / Color Settings -->	
 	<text name="systemInfo, dev, releasedate, md_name, md_description, md_lbl_players, md_players, md_lbl_developer, md_developer, md_lbl_publisher, md_publsher, md_lbl_genre, md_genre, md_lbl_playcount, md_playcount, md_lbl_lastplayed, md_lbl_releasedate, md_lbl_rating">
 		<fontPath>./_assets/FOT-RodinBokutohPro-DB.otf</fontPath>
+		<fontSize>0.04</fontSize>
 		<color>282421</color>
 	</text>
 	<textlist name="gamelist">
 		<fontPath>./_assets/FOT-RodinBokutohPro-DB.otf</fontPath>
+		<fontSize>0.04</fontSize>
 	</textlist>
 	<datetime name="md_lastplayed, md_releasedate">
 		<fontPath>./_assets/FOT-RodinBokutohPro-DB.otf</fontPath>
+		<fontSize>0.04</fontSize>
 		<color>282421</color>
 	</datetime>
 </view>
@@ -76,8 +79,8 @@
 	<image name="logo2" extra="true">
 		<path>./_assets/logos_gamelist/${system.theme}.png</path>
 		<origin>0.5 0.5</origin>
-		<pos>0.5 0.065</pos>
-		<maxSize>0.3 0.3</maxSize>
+		<pos>0.5 0.0675</pos>
+		<maxSize>0.43 0.43</maxSize>
 	</image>
 </view>
 
@@ -89,17 +92,16 @@
 		<alignment>right</alignment>
 		<backgroundColor>00000000</backgroundColor>
 		<origin>1 0.5</origin>
-		<pos>0.9 0.04</pos>
-		<size>1 0.050</size>
-		<fontSize>0.04</fontSize>
+		<pos>0.89 0.041</pos>
+		<size>0.43 0.03</size>
 	</text>
 
 	<image name="system" extra="true">
 		<path>./_assets/systems/${system.theme}.png</path>
 		<tile>false</tile>
 		<origin>0.5 0.5</origin>
-		<pos>0.5 0.45</pos>
-		<maxSize>0.35 0.35</maxSize>
+		<pos>0.5 0.5</pos>
+		<maxSize>1 1</maxSize>
 	</image>
 
 	<image name="logo">
@@ -120,16 +122,16 @@
 
 	<text name="dev" extra="true">
 		<alignment>center</alignment>
-		<fontSize>0.08</fontSize>
 		<origin>0.5 0.5</origin>
-		<pos>0.6 0.755</pos>
+		<pos>0.62 0.758</pos>
+		<size>0.35 0.03</size>
 	</text>
 
 	<text name="releasedate" extra="true">
 		<alignment>center</alignment>
-		<fontSize>0.04</fontSize>
 		<origin>0.5 0.5</origin>
-		<pos>0.6 0.845</pos>
+		<pos>0.62 0.822</pos>
+		<size>0.35 0.03</size>
 	</text>
 
 </view>
@@ -148,7 +150,6 @@
 		<origin>0.5 0.5</origin>
 		<pos>0.25 0.52</pos>
 		<size>0.45 0.7</size>
-		<fontSize>0.03</fontSize>
 		<lineSpacing>1.5</lineSpacing>
 	</textlist>
 
@@ -194,32 +195,29 @@
 
 	<!-- Game Name -->
 	<text name="md_name">
-		<fontSize>0.043</fontSize>
 		<origin>0.5 0.5</origin>
-		<pos>0.5 0.275</pos>
-		<size>0.8 0.08</size>
+		<pos>0.5 0.2925</pos>
+		<size>0.735 0.05</size>
 	</text>
 	<!-- Label Genre -->	
 	<text name="md_lbl_releasedate">
-		<fontSize>0.03</fontSize>
 		<alignment>right</alignment>
 		<origin>1 0</origin>
-		<pos>0.5 0.35</pos>
-		<size>0.4 0.08</size>
+		<pos>0.5 0.3425</pos>
+		<size>0.37 0.05</size>
 	</text>
 	<!-- Genre -->
 	<datetime name="md_releasedate">
-		<fontSize>0.03</fontSize>
-		<pos>0.5 0.35</pos>
-		<size>0.4 0.08</size>
+		<pos>0.5 0.3425</pos>
+		<size>0.37 0.05</size>
 	</datetime>
 
 	<!-- Grid -->
 	<imagegrid name="gamegrid">
 		<scrollDirection>horizontal</scrollDirection>
-		<pos>0.1 0.525</pos>
+		<pos>0.11 0.505</pos>
 		<size>0.8 0.35</size>
-		<margin>0.045 0</margin>
+		<margin>0.0375 0</margin>
 	</imagegrid>
 	<gridtile name="default">
 		<size>0.235 0.35</size>
