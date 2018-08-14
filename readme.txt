@@ -13,6 +13,17 @@ You are free to modify the theme for your personal use only.
 
 -------------------------------------------------------------------------------  
 
+Additional Informations
+For an improved user experience, adjust the following options within EmulationStation:
+
+Mains Menu > UI Settings:
+Carousel Transitions: OFF
+Transition Style: INSTANT
+Gamelist View Style: GRID
+On-Screen Help: OFF
+
+-------------------------------------------------------------------------------  
+
 Currently this theme supports:
 
 Game Boy
