@@ -29,7 +29,7 @@
 	<!-- Font / Color Settings -->	
 	<text name="systemInfo, dev, releasedate, md_name, md_description, md_lbl_players, md_players, md_lbl_developer, md_developer, md_lbl_publisher, md_publsher, md_lbl_genre, md_genre, md_lbl_playcount, md_playcount, md_lbl_lastplayed, md_lbl_releasedate, md_lbl_rating">
 		<fontPath>./_assets/FOT-RodinBokutohPro-DB.otf</fontPath>
-		<fontSize>0.04</fontSize>
+		<fontSize>0.0475</fontSize>
 		<color>282421</color>
 	</text>
 	<textlist name="gamelist">
@@ -47,7 +47,7 @@
 <view name="system">
 	<image name="systembg" extra="true">
 		<tile>false</tile>
-		<path>./_assets/system-global-bg.jpg</path>
+		<path>./_assets/guidelines_systems.jpg</path>
 		<size>1 1</size>
 		<pos>0 0</pos>
 		<zIndex>1</zIndex>
@@ -67,7 +67,7 @@
 <view name="grid">
 	<image name="gridbg" extra="true">
 		<tile>false</tile>
-		<path>./_assets/ingame-global-bg.jpg</path>
+		<path>./_assets/guidelines_gamelist.jpg</path>
 		<size>1 1</size>
 		<pos>0 0</pos>
 		<zIndex>1</zIndex>
@@ -195,38 +195,34 @@
 
 	<!-- Game Name -->
 	<text name="md_name">
+		<alignment>center</alignment>
 		<origin>0.5 0.5</origin>
 		<pos>0.5 0.2925</pos>
 		<size>0.735 0.05</size>
 	</text>
 	<!-- Label Genre -->	
-	<text name="md_lbl_releasedate">
-		<alignment>right</alignment>
-		<origin>1 0</origin>
-		<pos>0.5 0.3425</pos>
-		<size>0.37 0.05</size>
+	<text name="md_developer">
+		<alignment>center</alignment>
+		<origin>0.5 0.5</origin>
+		<pos>0.5 0.3675</pos>
+		<size>0.735 0.05</size>
 	</text>
-	<!-- Genre -->
-	<datetime name="md_releasedate">
-		<pos>0.5 0.3425</pos>
-		<size>0.37 0.05</size>
-	</datetime>
 
 	<!-- Grid -->
 	<imagegrid name="gamegrid">
 		<scrollDirection>horizontal</scrollDirection>
-		<pos>0.11 0.505</pos>
-		<size>0.8 0.35</size>
-		<margin>0.0375 0</margin>
+		<pos>0.1275 0.525</pos>
+		<size>0.8 0.3</size>
+		<margin>0.07225 0</margin>
 	</imagegrid>
 	<gridtile name="default">
-		<size>0.235 0.35</size>
+		<size>0.2 0.3</size>
 		<padding>40 40</padding>
 		<backgroundImage>./_assets/tile.png</backgroundImage>
 		<backgroundColor>ffffffff</backgroundColor>
 	</gridtile>
 	<gridtile name="selected">
-		<size>0.235 0.35</size>
+		<size>0.2 0.3</size>
 		<padding>40 40</padding>
 		<backgroundImage>./_assets/icon.png</backgroundImage>
 		<backgroundColor>ffffffff</backgroundColor>
