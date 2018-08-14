@@ -1,228 +1,237 @@
 <theme>
 <formatVersion>4</formatVersion>
 
-<!-- Placeholder Background -->
+<!-- Global Settings -->
 <view name="system, basic, detailed, video, grid">
- <image name="background" extra="true">
-	<path>./_assets/dot.png</path>
-	<color>B3B3B9</color>
-	<origin>0 0</origin>
-	<pos>0 0</pos>
-	<size>1 1</size>
-	<zIndex>1</zIndex>
- </image>
- 
- <sound name="systemscroll">
-	<path>./_assets/selecting.wav</path>
- </sound>
-		
- <sound name="systemselect">
-	<path>./_assets/systemscroll.wav</path>
- </sound>
 
- <sound name="back">
-	<path>./_assets/back.wav</path>
- </sound>
-		
- <sound name="launch">
-	<path>./_assets/launching.wav</path>
- </sound>
-		
- <sound name="menuopen">
-	<path>./_assets/menu.wav</path>
- </sound>
+	<!-- Hide Unused Elements -->	
+	<text name="md_description, md_lbl_players, md_players, md_lbl_developer, md_developer, md_lbl_publisher, md_publsher, md_lbl_genre, md_genre, md_lbl_playcount, md_playcount, md_lbl_lastplayed, md_lbl_releasedate, md_lbl_rating">
+		<pos>1 1</pos>
+	</text>
+	<datetime name="md_lastplayed, md_releasedate">
+		<pos>1 1</pos>
+	</datetime>
+	<rating name="md_rating">
+		<pos>1 1</pos>
+	</rating>
+	<helpsystem name="help">
+		<pos>10 10</pos>
+	</helpsystem>
+
+	<!-- Sounds -->	
+	<sound name="systemscroll">
+		<path>./_assets/selecting.wav</path>
+	</sound>
+	<sound name="launch">
+		<path>./_assets/launching.wav</path>
+	</sound>
+
+	<!-- Font / Color Settings -->	
+	<text name="systemInfo, dev, releasedate, md_name, md_description, md_lbl_players, md_players, md_lbl_developer, md_developer, md_lbl_publisher, md_publsher, md_lbl_genre, md_genre, md_lbl_playcount, md_playcount, md_lbl_lastplayed, md_lbl_releasedate, md_lbl_rating">
+		<fontPath>./_assets/FOT-RodinBokutohPro-DB.otf</fontPath>
+		<color>282421</color>
+	</text>
+	<textlist name="gamelist">
+		<fontPath>./_assets/FOT-RodinBokutohPro-DB.otf</fontPath>
+	</textlist>
+	<datetime name="md_lastplayed, md_releasedate">
+		<fontPath>./_assets/FOT-RodinBokutohPro-DB.otf</fontPath>
+		<color>282421</color>
+	</datetime>
 </view>
 
 <!-- Background Images -->
 <view name="system">
- <image name="systembg" extra="true">
-	<tile>false</tile>
-	<path>./_assets/system-global-bg.jpg</path>
-	<size>1 1</size>
-	<pos>0 0</pos>
-	<zIndex>1</zIndex>
- </image>
+	<image name="systembg" extra="true">
+		<tile>false</tile>
+		<path>./_assets/system-global-bg.jpg</path>
+		<size>1 1</size>
+		<pos>0 0</pos>
+		<zIndex>1</zIndex>
+	</image>
 </view>
-<!--
+
 <view name="basic, detailed, video">
- <image name="gamelistbg" extra="true">
-	<tile>false</tile>
-	<path>./_assets/yourimagehere.jpg</path>
-	<size>1 1</size>
-	<pos>0 0</pos>
- </image>
+	<image name="gamelistbg" extra="true">
+		<tile>false</tile>
+		<path>./_assets/ingame-basic-bg.jpg</path>
+		<size>1 1</size>
+		<pos>0 0</pos>
+		<zIndex>1</zIndex>
+	</image>
 </view>
--->
+
 <view name="grid">
- <image name="gridbg" extra="true">
-	<tile>false</tile>
-	<path>./_assets/ingame-global-bg.jpg</path>
-	<size>1 1</size>
-	<pos>0 0</pos>
-	<zIndex>1</zIndex>
- </image>
+	<image name="gridbg" extra="true">
+		<tile>false</tile>
+		<path>./_assets/ingame-global-bg.jpg</path>
+		<size>1 1</size>
+		<pos>0 0</pos>
+		<zIndex>1</zIndex>
+	</image>
+</view>
+
+<!-- Gamelist Logo -->
+<view name="basic, detailed, video, grid">
+	<image name="logo2" extra="true">
+		<path>./_assets/logos_gamelist/${system.theme}.png</path>
+		<origin>0.5 0.5</origin>
+		<pos>0.5 0.065</pos>
+		<maxSize>0.3 0.3</maxSize>
+	</image>
 </view>
 
 <!-- System View -->
 <feature supported="carousel">
 <view name="system">
 
- <text name="systemInfo">
-	<alignment>right</alignment>
-	<backgroundColor>00000000</backgroundColor>
-	<color>111111</color>
-	<origin>1 0.5</origin>
-	<pos>0.9 0.042</pos>
-	<size>1 0.050</size>
-	<fontSize>0.045</fontSize>
- </text>
- 
- <image name="system" extra="true">
-	<path>./_assets/systems/${system.theme}.png</path>
-	<tile>false</tile>
-	<origin>0.5 0.5</origin>
-	<pos>0.5 0.4</pos>
-	<maxSize>0.6 0.5</maxSize>
-  </image>
-  
- <image name="logo">
-	<path>./_assets/logos_systems/${system.theme}.png</path>
- </image>
+	<text name="systemInfo">
+		<alignment>right</alignment>
+		<backgroundColor>00000000</backgroundColor>
+		<origin>1 0.5</origin>
+		<pos>0.9 0.04</pos>
+		<size>1 0.050</size>
+		<fontSize>0.04</fontSize>
+	</text>
 
- <carousel name="systemcarousel">
-	<type>horizontal</type>
-	<color>00000000</color>
-	<origin>0.5 0.5</origin>
-	<pos>0.295 0.795</pos>
-	<size>1 0.25</size> 
-	<logoScale>0.5</logoScale>
-	<logoSize>0.425 0.425</logoSize>
-	<maxLogoCount>1</maxLogoCount>
-	<logoAlignment>center</logoAlignment> 
- </carousel>
- 
- <text name="dev" extra="true">
-	<fontPath>./_assets/FOT-RodinBokutohPro-DB.otf</fontPath>
-	<alignment>center</alignment>
-	<fontSize>0.08</fontSize>
-	<color>282421</color>
-	<origin>0.5 0.5</origin>
-	<pos>0.62 0.755</pos>
- </text>
- 
- <text name="releasedate" extra="true">
-	<fontPath>./_assets/FOT-RodinBokutohPro-DB.otf</fontPath>
-	<alignment>center</alignment>
-	<forceUppercase>0</forceUppercase>
-	<fontSize>0.04</fontSize>
-	<color>282421</color>
-	<origin>0.5 0.5</origin>
-	<pos>0.62 0.83</pos>
- </text>
+	<image name="system" extra="true">
+		<path>./_assets/systems/${system.theme}.png</path>
+		<tile>false</tile>
+		<origin>0.5 0.5</origin>
+		<pos>0.5 0.4</pos>
+		<maxSize>0.6 0.5</maxSize>
+	</image>
 
- <helpsystem name="help">
-	<pos>10 10</pos>
- </helpsystem>
-  
+	<image name="logo">
+		<path>./_assets/logos_systems/${system.theme}.png</path>
+	</image>
+
+	<carousel name="systemcarousel">
+		<type>horizontal</type>
+		<color>00000000</color>
+		<origin>0.5 0.5</origin>
+		<pos>0.295 0.7925</pos>
+		<size>1 0.25</size> 
+		<logoScale>0.5</logoScale>
+		<logoSize>0.425 0.425</logoSize>
+		<maxLogoCount>1</maxLogoCount>
+		<logoAlignment>center</logoAlignment> 
+	</carousel>
+
+	<text name="dev" extra="true">
+		<alignment>center</alignment>
+		<fontSize>0.08</fontSize>
+		<origin>0.5 0.5</origin>
+		<pos>0.6 0.755</pos>
+	</text>
+
+	<text name="releasedate" extra="true">
+		<alignment>center</alignment>
+		<fontSize>0.04</fontSize>
+		<origin>0.5 0.5</origin>
+		<pos>0.6 0.845</pos>
+	</text>
+
 </view>
 </feature>
 
+<!-- Global Gamelist Settings -->
+<view name="basic, detailed, video">
 
-<!-- Gamelist View -->
-
-<view name="basic, detailed, video, grid">
-
- <image name="logo2" extra="true">
-	<path>./_assets/logos_gamelist/${system.theme}.png</path>
-	<origin>0.5 0.5</origin>
-	<pos>0.5 0.065</pos>
-	<maxSize>0.25 0.25</maxSize>
- </image>
- 
-<textlist name="gamelist">
-	<fontPath>./_assets/FOT-RodinBokutohPro-DB.otf</fontPath>
-	<selectorColor>ABAEB4</selectorColor>
-	<selectedColor>6F7070</selectedColor>
-	<primaryColor>111111</primaryColor>
-	<secondaryColor>eac428</secondaryColor>
-	<scrollSound>./_assets/selecting.wav</scrollSound>
-	<alignment>left</alignment>
-	<origin>0.5 0.5</origin>
-	<pos>0.25 0.5</pos>
-	<size>0.5 0.75</size>
-	<fontSize>0.03</fontSize>
-	<lineSpacing>1.70</lineSpacing>
-	<horizontalMargin>0.05</horizontalMargin>
-</textlist>
-
-<!-- Hide Unused Elements -->	
-<text name="md_description, md_lbl_players, md_players, md_lbl_developer, md_developer, md_lbl_publisher, md_publsher, md_lbl_genre, md_genre, md_lbl_playcount, md_playcount, md_lbl_lastplayed, md_lbl_releasedate, md_lbl_rating">
-	<pos>1 1</pos>
-</text>
-<datetime name="md_lastplayed, md_releasedate">
-	<pos>1 1</pos>
-</datetime>
-<rating name="md_rating">
-	<pos>1 1</pos>
-</rating>
-
- <helpsystem name="help">
-	<pos>10 10</pos>
- </helpsystem>
+	<textlist name="gamelist">
+		<primaryColor>282421</primaryColor>
+		<secondaryColor>21BAFE</secondaryColor>
+		<selectorColor>9BB1C9</selectorColor>
+		<selectedColor>282421</selectedColor>
+		<scrollSound>./_assets/selecting.wav</scrollSound>
+		<alignment>left</alignment>
+		<origin>0.5 0.5</origin>
+		<pos>0.25 0.52</pos>
+		<size>0.45 0.7</size>
+		<fontSize>0.03</fontSize>
+		<lineSpacing>1.5</lineSpacing>
+	</textlist>
 
 </view>
 
-<view name="basic, detailed, grid">
- <image name="md_image">
-	<origin>0.5 0.5</origin>
-	<pos>0.75 0.5</pos>
-	<maxSize>0.5 0.5</maxSize>
- </image>
+<!-- Basic View -->
+<view name="basic">
+	<textlist name="gamelist">
+		<pos>0.5 0.52</pos>
+		<alignment>center</alignment>
+	</textlist>
+</view>
+<!-- Detailed View -->
+<view name="detailed">
+	<image name="md_image">
+		<origin>0.5 0.5</origin>
+		<pos>0.75 0.52</pos>
+		<maxSize>0.45 0.45</maxSize>
+	</image>
 </view>
 
+<!-- Video View -->
 <feature supported="video">
 <view name="video">
- <video name="md_video">
-	<origin>0.5 0.5</origin>
-	<pos>0.6925 0.3915</pos>
-	<maxSize>0.4292 0.5297</maxSize>
-	<delay>2</delay>
-	<showSnapshotNoVideo>true</showSnapshotNoVideo>
-	<showSnapshotDelay>true</showSnapshotDelay>
- </video>
+	<image name="md_marquee">
+		<origin>0.5 0.5</origin>
+		<pos>0.75 0.25</pos>
+		<maxSize>0.18 0.18</maxSize>
+	</image>
+	<video name="md_video">
+		<origin>0.5 0.5</origin>
+		<pos>0.75 0.52</pos>
+		<maxSize>0.45 0.45</maxSize>
+		<delay>2</delay>
+		<showSnapshotNoVideo>true</showSnapshotNoVideo>
+		<showSnapshotDelay>true</showSnapshotDelay>
+	</video>
 </view>
 </feature>
 
 <!-- Grid View -->
 <view name="grid">
 
- <text name="md_name">
-	<fontPath>./_assets/FOT-RodinBokutohPro-DB.otf</fontPath>
-	<fontSize>0.08</fontSize>
-	<color>282421</color>
-	<origin>0.5 0.5</origin>
-	<pos>0.5 0.33</pos>
-	<size>0.8 0.25</size>
- </text>
- 
- <!-- Grid -->
- <imagegrid name="gamegrid">
-	<scrollDirection>horizontal</scrollDirection>
-	<pos>0.1 0.53</pos>
-	<size>0.8 0.35</size>
-	<margin>0.025 0</margin>
- </imagegrid>
- <gridtile name="default">
-	<size>0.25 0.35</size>
-	<padding>40 40</padding>
-	<backgroundImage>./_assets/tile.png</backgroundImage>
-	<backgroundColor>ffffff</backgroundColor>
- </gridtile>
- <gridtile name="selected">
-	<size>0.25 0.35</size>
-	<padding>40 40</padding>
-	<backgroundImage>./_assets/icon.png</backgroundImage>
-	<backgroundColor>ffffff</backgroundColor>
- </gridtile>
+	<!-- Game Name -->
+	<text name="md_name">
+		<fontSize>0.043</fontSize>
+		<origin>0.5 0.5</origin>
+		<pos>0.5 0.275</pos>
+		<size>0.8 0.08</size>
+	</text>
+	<!-- Label Genre -->	
+	<text name="md_lbl_releasedate">
+		<fontSize>0.03</fontSize>
+		<alignment>right</alignment>
+		<origin>1 0</origin>
+		<pos>0.5 0.35</pos>
+		<size>0.4 0.08</size>
+	</text>
+	<!-- Genre -->
+	<datetime name="md_releasedate">
+		<fontSize>0.03</fontSize>
+		<pos>0.5 0.35</pos>
+		<size>0.4 0.08</size>
+	</datetime>
+
+	<!-- Grid -->
+	<imagegrid name="gamegrid">
+		<scrollDirection>horizontal</scrollDirection>
+		<pos>0.1 0.525</pos>
+		<size>0.8 0.35</size>
+		<margin>0.045 0</margin>
+	</imagegrid>
+	<gridtile name="default">
+		<size>0.235 0.35</size>
+		<padding>40 40</padding>
+		<backgroundImage>./_assets/tile.png</backgroundImage>
+		<backgroundColor>ffffffff</backgroundColor>
+	</gridtile>
+	<gridtile name="selected">
+		<size>0.235 0.35</size>
+		<padding>40 40</padding>
+		<backgroundImage>./_assets/icon.png</backgroundImage>
+		<backgroundColor>ffffffff</backgroundColor>
+	</gridtile>
 </view>
 </theme>
