@@ -47,7 +47,7 @@
 <view name="system">
 	<image name="systembg" extra="true">
 		<tile>false</tile>
-		<path>./_assets/system-global-bg.jpg</path>
+		<path>./_assets/guidelines_systems.jpg</path>
 		<size>1 1</size>
 		<pos>0 0</pos>
 		<zIndex>1</zIndex>
@@ -67,7 +67,7 @@
 <view name="grid">
 	<image name="gridbg" extra="true">
 		<tile>false</tile>
-		<path>./_assets/ingame-global-bg.jpg</path>
+		<path>./_assets/guidelines_gamelist.jpg</path>
 		<size>1 1</size>
 		<pos>0 0</pos>
 		<zIndex>1</zIndex>
@@ -79,8 +79,8 @@
 	<image name="logo2" extra="true">
 		<path>./_assets/logos_gamelist/${system.theme}.png</path>
 		<origin>0.5 0.5</origin>
-		<pos>0.5 0.0675</pos>
-		<maxSize>0.6 0.4</maxSize>
+		<pos>0.5 0.068</pos>
+		<maxSize>0.661 0.107</maxSize>
 	</image>
 </view>
 
@@ -99,9 +99,9 @@
 	<image name="system" extra="true">
 		<path>./_assets/systems/${system.theme}.png</path>
 		<tile>false</tile>
-		<origin>0 0</origin>
-		<pos>0 0</pos>
-		<size>1 1</size>
+		<origin>0.5 1</origin>
+		<pos>0.5 0.6065</pos>
+		<maxSize>0.6525 0.4075</maxSize>
 	</image>
 
 	<image name="logo">
