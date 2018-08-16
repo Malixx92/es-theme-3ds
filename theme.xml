@@ -25,19 +25,6 @@
 	<sound name="launch">
 		<path>./_assets/launching.wav</path>
 	</sound>
-
-	<!-- Font / Color Settings -->	
-	<text name="systemInfo, dev, releasedate, md_name, md_description, md_lbl_players, md_players, md_lbl_developer, md_developer, md_lbl_publisher, md_publsher, md_lbl_genre, md_genre, md_lbl_playcount, md_playcount, md_lbl_lastplayed, md_lbl_releasedate, md_lbl_rating">
-		<fontPath>./_assets/FOT-RodinBokutohPro-DB.otf</fontPath>
-		<color>282421</color>
-	</text>
-	<textlist name="gamelist">
-		<fontPath>./_assets/FOT-RodinBokutohPro-DB.otf</fontPath>
-	</textlist>
-	<datetime name="md_lastplayed, md_releasedate">
-		<fontPath>./_assets/FOT-RodinBokutohPro-DB.otf</fontPath>
-		<color>282421</color>
-	</datetime>
 </view>
 
 <!-- Background Images -->
@@ -64,7 +51,7 @@
 <view name="grid">
 	<image name="gridbg" extra="true">
 		<tile>false</tile>
-		<path>./_assets/ingame-global-bg.jpg</path>
+		<path>./_assets/guidelines_gamelist.jpg</path>
 		<size>1 1</size>
 		<pos>0 0</pos>
 		<zIndex>1</zIndex>
@@ -76,6 +63,8 @@
 <view name="system">
 
 	<text name="systemInfo">
+		<fontPath>./_assets/FOT-RodinBokutohPro-DB.otf</fontPath>
+		<color>282421</color>
 		<fontSize>0.049</fontSize>
 		<alignment>right</alignment>
 		<backgroundColor>00000000</backgroundColor>
@@ -109,6 +98,8 @@
 	</carousel>
 
 	<text name="dev" extra="true">
+		<fontPath>./_assets/FOT-RodinBokutohPro-B.otf</fontPath>
+		<color>282421</color>
 		<fontSize>0.05</fontSize>
 		<alignment>center</alignment>
 		<origin>0.5 0.5</origin>
@@ -117,6 +108,8 @@
 	</text>
 
 	<text name="releasedate" extra="true">
+		<fontPath>./_assets/FOT-RodinBokutohPro-B.otf</fontPath>
+		<color>282421</color>
 		<fontSize>0.05</fontSize>
 		<alignment>center</alignment>
 		<origin>0.5 0.5</origin>
@@ -141,6 +134,7 @@
 <view name="basic, detailed, video">
 
 	<textlist name="gamelist">
+		<fontPath>./_assets/FOT-RodinBokutohPro-DB.otf</fontPath>
 		<fontSize>0.0545</fontSize>
 		<primaryColor>282421</primaryColor>
 		<secondaryColor>21BAFE</secondaryColor>
@@ -196,6 +190,8 @@
 
 	<!-- Game Name -->
 	<text name="md_name">
+		<fontPath>./_assets/FOT-RodinBokutohPro-DB.otf</fontPath>
+		<color>282421</color>
 		<fontSize>0.06</fontSize>
 		<alignment>center</alignment>
 		<origin>0.5 0.5</origin>
@@ -204,10 +200,12 @@
 	</text>
 	<!-- Label Genre -->	
 	<text name="md_developer">
-		<fontSize>0.065</fontSize>
+		<fontPath>./_assets/FOT-RodinBokutohPro-DB.otf</fontPath>
+		<color>282421</color>
+		<fontSize>0.06</fontSize>
 		<alignment>center</alignment>
 		<origin>0.5 0.5</origin>
-		<pos>0.5 0.39</pos>
+		<pos>0.5 0.39125</pos>
 		<size>0.735 0.05</size>
 	</text>
 
