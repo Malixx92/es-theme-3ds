@@ -29,16 +29,13 @@
 	<!-- Font / Color Settings -->	
 	<text name="systemInfo, dev, releasedate, md_name, md_description, md_lbl_players, md_players, md_lbl_developer, md_developer, md_lbl_publisher, md_publsher, md_lbl_genre, md_genre, md_lbl_playcount, md_playcount, md_lbl_lastplayed, md_lbl_releasedate, md_lbl_rating">
 		<fontPath>./_assets/FOT-RodinBokutohPro-DB.otf</fontPath>
-		<fontSize>0.0545</fontSize>
 		<color>282421</color>
 	</text>
 	<textlist name="gamelist">
 		<fontPath>./_assets/FOT-RodinBokutohPro-DB.otf</fontPath>
-		<fontSize>0.04</fontSize>
 	</textlist>
 	<datetime name="md_lastplayed, md_releasedate">
 		<fontPath>./_assets/FOT-RodinBokutohPro-DB.otf</fontPath>
-		<fontSize>0.04</fontSize>
 		<color>282421</color>
 	</datetime>
 </view>
@@ -47,7 +44,7 @@
 <view name="system">
 	<image name="systembg" extra="true">
 		<tile>false</tile>
-		<path>./_assets/guidelines_systems.jpg</path>
+		<path>./_assets/system-global-bg.jpg</path>
 		<size>1 1</size>
 		<pos>0 0</pos>
 		<zIndex>1</zIndex>
@@ -67,20 +64,10 @@
 <view name="grid">
 	<image name="gridbg" extra="true">
 		<tile>false</tile>
-		<path>./_assets/guidelines_gamelist.jpg</path>
+		<path>./_assets/ingame-global-bg.jpg</path>
 		<size>1 1</size>
 		<pos>0 0</pos>
 		<zIndex>1</zIndex>
-	</image>
-</view>
-
-<!-- Gamelist Logo -->
-<view name="basic, detailed, video, grid">
-	<image name="logo2" extra="true">
-		<path>./_assets/logos_gamelist/${system.theme}.png</path>
-		<origin>0.5 0.5</origin>
-		<pos>0.5 0.068</pos>
-		<maxSize>0.661 0.107</maxSize>
 	</image>
 </view>
 
@@ -89,10 +76,11 @@
 <view name="system">
 
 	<text name="systemInfo">
+		<fontSize>0.049</fontSize>
 		<alignment>right</alignment>
 		<backgroundColor>00000000</backgroundColor>
 		<origin>1 0.5</origin>
-		<pos>0.89 0.0425</pos>
+		<pos>0.89 0.0405</pos>
 		<size>0.43 0.03</size>
 	</text>
 
@@ -100,8 +88,8 @@
 		<path>./_assets/systems/${system.theme}.png</path>
 		<tile>false</tile>
 		<origin>0.5 1</origin>
-		<pos>0.5 0.6065</pos>
-		<maxSize>0.6525 0.4075</maxSize>
+		<pos>0.5 0.6675</pos>
+		<maxSize>0.5965 0.475</maxSize>
 	</image>
 
 	<image name="logo">
@@ -112,7 +100,7 @@
 		<type>horizontal</type>
 		<color>00000000</color>
 		<origin>0.5 0.5</origin>
-		<pos>0.295 0.765</pos>
+		<pos>0.295 0.7945</pos>
 		<size>1 0.25</size> 
 		<logoScale>1.0</logoScale>
 		<logoSize>0.21 0.21</logoSize>
@@ -121,26 +109,39 @@
 	</carousel>
 
 	<text name="dev" extra="true">
+		<fontSize>0.05</fontSize>
 		<alignment>center</alignment>
 		<origin>0.5 0.5</origin>
-		<pos>0.62 0.73</pos>
+		<pos>0.62 0.76</pos>
 		<size>0.35 0.03</size>
 	</text>
 
 	<text name="releasedate" extra="true">
+		<fontSize>0.05</fontSize>
 		<alignment>center</alignment>
 		<origin>0.5 0.5</origin>
-		<pos>0.62 0.795</pos>
+		<pos>0.62 0.8225</pos>
 		<size>0.35 0.03</size>
 	</text>
 
 </view>
 </feature>
 
+<!-- Gamelist Logo -->
+<view name="basic, detailed, video, grid">
+	<image name="logo2" extra="true">
+		<path>./_assets/logos_gamelist/${system.theme}.png</path>
+		<origin>0.5 0</origin>
+		<pos>0.5 0.015</pos>
+		<size>0.665 0.1025</size>
+	</image>
+</view>
+
 <!-- Global Gamelist Settings -->
 <view name="basic, detailed, video">
 
 	<textlist name="gamelist">
+		<fontSize>0.0545</fontSize>
 		<primaryColor>282421</primaryColor>
 		<secondaryColor>21BAFE</secondaryColor>
 		<selectorColor>9BB1C9</selectorColor>
@@ -195,10 +196,10 @@
 
 	<!-- Game Name -->
 	<text name="md_name">
-		<fontSize>0.065</fontSize>
+		<fontSize>0.06</fontSize>
 		<alignment>center</alignment>
 		<origin>0.5 0.5</origin>
-		<pos>0.5 0.295</pos>
+		<pos>0.5 0.315</pos>
 		<size>0.735 0.05</size>
 	</text>
 	<!-- Label Genre -->	
@@ -206,26 +207,26 @@
 		<fontSize>0.065</fontSize>
 		<alignment>center</alignment>
 		<origin>0.5 0.5</origin>
-		<pos>0.5 0.375</pos>
+		<pos>0.5 0.39</pos>
 		<size>0.735 0.05</size>
 	</text>
 
 	<!-- Grid -->
 	<imagegrid name="gamegrid">
 		<scrollDirection>horizontal</scrollDirection>
-		<pos>0.089 0.475</pos>
-		<size>0.82 0.36</size>
-		<margin>-0.01 0</margin>
+		<pos>0.089 0.4925</pos>
+		<size>0.83 0.36</size>
+		<margin>-0.007 0</margin>
 	</imagegrid>
 	<gridtile name="default">
-		<size>0.28 0.39</size>
-		<padding>60 60</padding>
+		<size>0.28 0.365</size>
+		<padding>40 40</padding>
 		<backgroundImage>./_assets/tile.png</backgroundImage>
 		<backgroundColor>ffffffff</backgroundColor>
 	</gridtile>
 	<gridtile name="selected">
-		<size>0.28 0.39</size>
-		<padding>60 60</padding>
+		<size>0.28 0.36</size>
+		<padding>40 40</padding>
 		<backgroundImage>./_assets/icon.png</backgroundImage>
 		<backgroundColor>ffffffff</backgroundColor>
 	</gridtile>
