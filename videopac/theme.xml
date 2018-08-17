@@ -1,0 +1,13 @@
+<theme>
+<formatVersion>4</formatVersion>
+<include>./../theme.xml</include>
+
+<view name="system">
+  <text name="dev" extra="true">
+   <text>Magnavox</text>
+  </text>
+  <text name="releasedate" extra="true">
+   <text>Released: 1978</text>
+  </text>
+ </view>
+</theme>
