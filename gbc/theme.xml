@@ -4,10 +4,10 @@
 
 <view name="system">
   <text name="dev" extra="true">
-   <text>Sega</text>
+   <text>Nintendo</text>
   </text>
   <text name="releasedate" extra="true">
-   <text>Released: 1991</text>
+   <text>Released: 1998</text>
   </text>
  </view>
 </theme>
