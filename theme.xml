@@ -51,7 +51,7 @@
 <view name="grid">
 	<image name="gridbg" extra="true">
 		<tile>false</tile>
-		<path>./_assets/system-global-bg.jpg</path>
+		<path>./_assets/ingame-global-bg.jpg</path>
 		<size>1 1</size>
 		<pos>0 0</pos>
 		<zIndex>1</zIndex>
