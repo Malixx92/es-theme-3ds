@@ -31,3 +31,4 @@ Game Boy
 Game Boy Color
 Game Boy Advance
 Game Gear
+Pokémon Mini
