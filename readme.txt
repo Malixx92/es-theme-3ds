@@ -27,8 +27,18 @@ On-Screen Help: OFF
 
 Currently this theme supports:
 
+Arcade
+Favorites
+Game & Watch
 Game Boy
-Game Boy Color
 Game Boy Advance
+Game Boy Color
 Game Gear
+NES
+Neo Geo Pocket
+Neo Geo Pocket Color
 Pokémon mini
+SNES
+Turbografx16
+WonderSwan
+WonderSwanColor
