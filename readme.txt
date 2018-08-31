@@ -1,7 +1,7 @@
 Theme designed by Malixx
 Theme coded by EctoOne
 Version 1.0
-13/08/2018
+31/08/2018
 
 Theme based on and inspired by the look of the menus used on the Nintendo 3DS.
 
